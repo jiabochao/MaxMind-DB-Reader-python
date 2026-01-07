@@ -114,7 +114,8 @@ jobs:
     environment: release
     permissions:
       id-token: write
-    if: github.event_name == 'release' && github.event.action == 'published'
+    # if: github.event_name == 'release' && github.event.action == 'published'
+    if: false
     steps:
       - uses: actions/download-artifact@v7
         with:
